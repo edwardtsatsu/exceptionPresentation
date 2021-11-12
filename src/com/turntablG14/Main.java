@@ -16,12 +16,16 @@ public class Main {
 //        printLength(null);
           addNumbers(-3,-5);
           printLength("edwardPearlAlex");
+          printLength(null);
 
+          //creating and list and adding numbers to the list
+
+         // Question ?
+         // What kind of exception is this ?   A. CHECKED    B. UNCHECKED  C. NONE OF THE ABOVE
 //          ArrayList<Integer> myList2 = new ArrayList();
 //          myList2.add(6);
 //          myList2.add(8);
 //          myList2.add(78);
-//
 //
 //          try{
 //              System.out.println(myList2.get(6));
