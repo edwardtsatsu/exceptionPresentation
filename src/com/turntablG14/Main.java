@@ -10,7 +10,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException { //throws FileNotFoundException
 	// write your code here
         //checked exception, and this happens at compiler time !!
-        readFile("myFile.txt");
+        try{
+            readFile("myFile.txt");
+        }catch (FileNotFoundException npm){
+            System.out.println("please input a correct file");
+        }
 
 
         //unchecked exception
@@ -61,3 +65,10 @@ public class Main {
 
 // how java detect which part to throw exception
 // NB: You can add "try catch block" to handle checked exception as you do same for unchecked exception as well !!
+// As you’ve seen, there are lots of different things you should consider when you throw or catch an exception. Most of them have the goal to improve the readability of your code or the usability of your API.
+//
+//Exceptions are most often an error handling mechanism and
+// a communication medium at the same time. You should, therefore,
+// make sure to discuss the best practices and rules you want to apply
+// with your coworkers so that everyone understands the general concepts
+// and uses them in the same way.
